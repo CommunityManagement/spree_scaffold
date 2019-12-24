@@ -1,4 +1,4 @@
-class CreateSpree<%= class_name.pluralize %> < ActiveRecord::Migration
+class CreateSpree<%= class_name.pluralize %> < SpreeExtension::Migration[4.2]
   def up
     create_table :spree_<%= table_name %> do |t|
 <% attributes.each do |attribute| -%>
